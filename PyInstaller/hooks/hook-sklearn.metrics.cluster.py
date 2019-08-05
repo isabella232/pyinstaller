@@ -11,4 +11,5 @@
 hiddenimports = ['sklearn.utils.sparsetools._graph_validation',
                  'sklearn.utils.sparsetools._graph_tools',
                  'sklearn.utils.lgamma',
-                 'sklearn.utils.weight_vector']
+                 'sklearn.utils.weight_vector',
+                 'sklearn.utils._cython_blas']

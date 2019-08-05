@@ -15,4 +15,4 @@ hiddenimports=['cymem', 'cymem.cymem', 'thinc.linalg', 'murmurhash', 'murmurhash
 'spacy.syntax._beam_utils', 'spacy.syntax.ner', 'thinc.neural._classes.difference', 'srsly.msgpack.util', 'preshed',
 'preshed.maps', 'thinc.neural', 'thinc.neural._aligned_alloc', 'thinc', 'blis',
 'blis.py', 'spacy.vocab', 'spacy.lemmatizer', 'spacy._align', 'spacy.util',
-'spacy.lang', 'spacy.data.en', 'spacy.syntax._parser_model', 'spacy.matcher._schemas']
+'spacy.lang', 'spacy.lang.en', 'spacy.syntax._parser_model', 'spacy.matcher._schemas']

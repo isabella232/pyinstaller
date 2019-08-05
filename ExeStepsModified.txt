@@ -1,0 +1,12 @@
+curl https://github.com/pyinstaller/pyinstaller/releases/download/v3.5/PyInstaller-3.5.tar.gz
+sed '/for p in nltk.data.path:/a \tif os.path.exists(p):'
+
+add 'sklearn.utils._cython_blas' in hook-sklearn.metrics.cluster.py 
+add hook for smart_open
+add hook for sklearn
+add hook for spacy.py
+add hook for ftfy.py
+make sure joblib==0.11 (or set 'export JOBLIB_MULTIPROCESSING=0') to fix infinite loop execution of executable
+
+
+python -m pyinstaller --onefile /mnt/texttokens/ai_sandbox/texttokens/MultiProcessorSpacy.py --add-data "/mnt/texttokens/ai_sandbox/texttokens/TokenConfig.json:." --exclude-module matplotlib --exclude-module qt5 --clean --noconfirm --runtime-hook ./PyInstaller/loader/rthooks/pyi_rth_sklearn.py
